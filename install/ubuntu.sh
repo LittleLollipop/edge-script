@@ -22,9 +22,11 @@ chmod +x kk
 
 sudo su
 ./kk create cluster --with-kubernetes v1.22.10 --with-kubesphere v3.3.0 -y
-kubectl logs -n kubesphere-system $(kubectl get pod -n kubesphere-system -l 'app in (ks-install, ks-installer)' -o jsonpath='{.items[0].metadata.name}') -f
 
-####Install Desktop
+#Install Desktop
 helm repo add edge-plus https://littlelollipop.github.io/awesome-helm-charts/
 helm repo update 
 helm install my-edge-desktop edge-plus/edge-desktop
+
+#Show message
+kubectl logs -n kubesphere-system $(kubectl get pod -n kubesphere-system -l 'app in (ks-install, ks-installer)' -o jsonpath='{.items[0].metadata.name}') -f
