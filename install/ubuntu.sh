@@ -8,6 +8,13 @@ sudo apt install ebtables -y
 sudo apt install ipset -y
 sudo apt install ipvsadm -y
 
+sudo apt install docker -y
+sudo apt install containerd -y
+sudo apt install nfs-kernel-server -y
+sudo apt install nfs-common -y
+sudo apt install ceph-common -y
+sudo apt install glusterfs-client -y
+sudo apt install glusterfs-server -y
 
 # Install KubeSphere
 curl -sfL https://get-kk.kubesphere.io | VERSION=v2.2.1 sh -
