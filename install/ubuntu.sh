@@ -8,7 +8,7 @@ sudo apt install ebtables -y
 sudo apt install ipset -y
 sudo apt install ipvsadm -y
 
-sudo apt install docker -y
+sudo apt install docker-ce docker-ce-cli containerd.io
 sudo apt install containerd -y
 sudo apt install nfs-kernel-server -y
 sudo apt install nfs-common -y
